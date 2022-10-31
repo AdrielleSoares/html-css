@@ -4,23 +4,36 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Fundo fixo de tela</title>
     <style>
         body {
+            height: 100vh;
             background-color: black;
             background-image: url(imagens/wallpaper002.jpg);
-            background-position: center top;
+            background-position: center center;
             background-repeat: no-repeat;
             background-size: cover;
             /* contain : mostra a imagem 100% exibida
                 cover : cobrir a tela inteira 
                 auto: automatico
             */
+            background-attachment: fixed;/*
+            scroll : rola o fundo e o conteudo
+            fixed : o conteudo fica fixo*/
+
+            /* Shorthand - background 
+
+                color > image > position > repeat > [size] > attachment
+
+                <<<<<<< Exemplo >>>>>>>>>
+                background: black url(imagens/wallpaper002.jpg) center center no-repeat fixed;
+                backgraoud-size:cover;
+            */
 
         }
         main {
             background-color: white;
-            width: 400px;
+            max-width: 400px;
             padding: 10px;
             margin: auto;
             border: 1px solid darkblue;
@@ -32,6 +45,14 @@
     <main>
         <h1>Teste de Imagem de Fundo</h1>
         <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Qui soluta possimus neque in harum quae perferendis velit cupiditate consectetur, dicta molestias at ullam consequuntur, nemo nam excepturi recusandae modi! Laudantium?</p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Veritatis magni ut voluptatibus iusto officia laboriosam sunt, optio assumenda quos debitis blanditiis, repellendus quis ullam! Sequi explicabo praesentium aspernatur aliquam et!</p>
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Officia perspiciatis suscipit enim pariatur dolores quam consequuntur consectetur dolorem eos! Eum, nam ipsum magni nihil distinctio blanditiis error modi harum quis?</p>
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Qui soluta possimus neque in harum quae perferendis velit cupiditate consectetur, dicta molestias at ullam consequuntur, nemo nam excepturi recusandae modi! Laudantium?</p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Veritatis magni ut voluptatibus iusto officia laboriosam sunt, optio assumenda quos debitis blanditiis, repellendus quis ullam! Sequi explicabo praesentium aspernatur aliquam et!</p>
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Officia perspiciatis suscipit enim pariatur dolores quam consequuntur consectetur dolorem eos! Eum, nam ipsum magni nihil distinctio blanditiis error modi harum quis?</p>
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Qui soluta possimus neque in harum quae perferendis velit cupiditate consectetur, dicta molestias at ullam consequuntur, nemo nam excepturi recusandae modi! Laudantium?</p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Veritatis magni ut voluptatibus iusto officia laboriosam sunt, optio assumenda quos debitis blanditiis, repellendus quis ullam! Sequi explicabo praesentium aspernatur aliquam et!</p>
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Officia perspiciatis suscipit enim pariatur dolores quam consequuntur consectetur dolorem eos! Eum, nam ipsum magni nihil distinctio blanditiis error modi harum quis?</p>
     </main>
     
 </body>
